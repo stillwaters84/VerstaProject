@@ -1,0 +1,57 @@
+﻿@model IEnumerable<TestTask1.Models.Order>
+
+@{
+    ViewData["Title"] = "Список заказов";
+}
+
+<h1>Список Заказов</h1>
+
+<p>
+    <a asp-action="Create">Внести новое значение</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>№ Заказа</th>
+            <th> Город Отправителя</th>
+            <th>Адрес отправителя</th>
+            <th>Город получателя</th>
+            <th>Адрес получателя</th>
+            <th>Вес груза, кг</th>
+            <th>Дата приёма заказа</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SenderCity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SenderAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecieverCity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecieverAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+            <td>
+                @item.Date.ToString("dd.MM.yyyy")
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Изменить</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Детали заказа</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
