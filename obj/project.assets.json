@@ -7217,11 +7217,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kendrick\\Desktop\\Work Projects\\VerstaProj\\TestTask1\\TestTask1.csproj",
+      "projectUniqueName": "C:\\Users\\Kendrick\\Source\\Repos\\VerstaProject\\TestTask1.csproj",
       "projectName": "TestTask1",
-      "projectPath": "C:\\Users\\Kendrick\\Desktop\\Work Projects\\VerstaProj\\TestTask1\\TestTask1.csproj",
+      "projectPath": "C:\\Users\\Kendrick\\Source\\Repos\\VerstaProject\\TestTask1.csproj",
       "packagesPath": "C:\\Users\\Kendrick\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kendrick\\Desktop\\Work Projects\\VerstaProj\\TestTask1\\obj\\",
+      "outputPath": "C:\\Users\\Kendrick\\Source\\Repos\\VerstaProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kendrick\\AppData\\Roaming\\NuGet\\NuGet.Config",
